@@ -164,6 +164,7 @@ export const generateCommitMessage = async (
 			timeout,
 			proxy,
 		);
+		console.log(completion, 'completion');
 
 		return deduplicateMessages(
 			completion.choices
