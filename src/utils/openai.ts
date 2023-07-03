@@ -9,6 +9,7 @@ import createHttpsProxyAgent from 'https-proxy-agent';
 import { KnownError } from './error.js';
 import type { CommitType } from './config.js';
 import { generatePrompt } from './prompt.js';
+// import { spinner } from '@clack/prompts';
 
 const httpsPost = async (
 	hostname: string,
@@ -134,6 +135,10 @@ export const generateCommitMessage = async (
 	proxy?: string,
 ) => {
 	try {
+		// const s = spinner();
+		// s.start('displaying your changes');
+		// s.stop(diff + 'diff');
+		console.log(diff, 'diff');
 		const completion = await createChatCompletion(
 			apiKey,
 			{
