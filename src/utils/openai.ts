@@ -138,7 +138,7 @@ export const generateCommitMessage = async (
 		// const s = spinner();
 		// s.start('displaying your changes');
 		// s.stop(diff + 'diff');
-		console.log(diff, 'diff');
+		// console.log(diff, 'diff');
 		const completion = await createChatCompletion(
 			apiKey,
 			{
